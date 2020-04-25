@@ -18,7 +18,7 @@ export default function SelectDateTime({ navigation, route }) {
             const response = await api.get(`providers/${provider.id}/available`,
                 {
                     params: {
-                        date: date.getTime(),
+                        date,
                     },
                 });
 
@@ -44,7 +44,7 @@ export default function SelectDateTime({ navigation, route }) {
                     keyExtractor={item => item.time}
                     renderItem={({ item }) => (
                         <Hour onPress={() => handleSelectHour(item.value)} enabled={item.available}>
-                            <Title>{item.time}</Title>
+                            <Title>{item.time} </Title>
                         </Hour>
                     )}
                 />

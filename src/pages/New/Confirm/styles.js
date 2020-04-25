@@ -21,6 +21,7 @@ export const Name = styled.Text`
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
+    text-align: center;
 `;
 
 export const Time = styled.Text`

@@ -11,7 +11,6 @@ export default function Dashboard() {
     useEffect(() => {
         async function loadAppointments() {
             const response = await api.get('appointments');
-
             setAppointments(response.data);
         }
 

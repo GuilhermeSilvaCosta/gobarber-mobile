@@ -40,7 +40,7 @@ export function* signUp({ payload }) {
             name, email, password,
         });
     } catch (e) {
-        Alert.alert('Falha no cadastro', 'Houve um erro no cadastro, verifique seus dados!');
+        Alert.alert('Falha no cadastro', `Houve um erro no cadastro, verifique seus dados! ${e.message}`);
 
         yield put(signFailure());
     }
