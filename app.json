@@ -29,6 +29,8 @@
     "android": {
       "package": "com.guilherme.gobarber",
       "versionCode": 1
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/GuilhermeSilvaCosta/gobarber-mobile"
   }
 }
